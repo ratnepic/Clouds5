@@ -14,7 +14,7 @@ cache = Cache(app)
 
 @app.route('/')
 def welcome():
-    return "Welcome"
+    return "Welcome!"
 
 @app.route('/data')
 @cache.cached(timeout=60)
